@@ -2049,6 +2049,7 @@ export default class LokiBlobMetadataStore
             ? destBlob.properties.leaseDuration
             : undefined,
         copyId: uuid(),
+        copyStatus: Models.CopyStatusType.Success,
         copySource,
         copyProgress: sourceBlob.properties.contentLength
           ? `${sourceBlob.properties.contentLength}/${sourceBlob.properties.contentLength}`

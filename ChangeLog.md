@@ -4,6 +4,10 @@
 
 ## Upcoming Release
 
+Blob:
+
+- Return `x-ms-copy-status` header from syncCopyFromURL.
+
 ## 2020.10 Version 3.9.0
 
 - Bump up Azure Storage service API version to 2020-02-10.

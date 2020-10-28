@@ -710,4 +710,17 @@ export default class StorageErrorFactory {
       additionalMessages
     );
   }
+
+  public static getUnexpectedSyncCopyStatus(
+    contextID: string,
+    copyStatus: string
+  ): StorageError {
+    return new StorageError(
+      409,
+      "UnexpectedSyncCopyStatus",
+      'Expected copyStatus to be "success" but got different status.',
+      contextID,
+      { ReceivedCopyStatus: copyStatus }
+    );
+  }
 }
